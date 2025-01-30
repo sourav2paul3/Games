@@ -33,4 +33,12 @@ export const Gamedata = [
     image: "",
     lastPlayed: "",
   },
+  {
+    title: "Snake",
+    favourite: false,
+    bgColour: "#00c04b",
+    textColor: "black",
+    image: "",
+    lastPlayed: "",
+  },
 ];

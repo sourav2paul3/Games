@@ -1,9 +1,9 @@
 .gameCardContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: flex-start;
-  gap: 90px;
+  gap: 10px;
   padding: 10px;
   margin: 0 auto;
   max-width: 100%;

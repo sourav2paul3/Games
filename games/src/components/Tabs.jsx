@@ -6,22 +6,24 @@ const Tabs = () => {
   const { currentTab, setCurrentTab } = useContext(GamesContext);
   return (
     <div className={styles.tabContainer}>
-      <h1
-        className={`${styles.tabsHeader} ${
-          currentTab === "allGames" ? styles.activeTab : ""
-        }`}
-        onClick={() => setCurrentTab("allGames")}
-      >
-        All Games
-      </h1>
-      <h1
-        className={`${styles.tabsHeader} ${
-          currentTab === "favGames" ? styles.activeTab : ""
-        }`}
-        onClick={() => setCurrentTab("favGames")}
-      >
-        Favourite Games
-      </h1>
+      <div className={styles.tabs}>
+        <div
+          className={`${styles.tab} ${
+            currentTab === "allGames" ? styles.activeTab : ""
+          }`}
+          onClick={() => setCurrentTab("allGames")}
+        >
+          All Games
+        </div>
+        <div
+          className={`${styles.tab} ${
+            currentTab === "favGames" ? styles.activeTab : ""
+          }`}
+          onClick={() => setCurrentTab("favGames")}
+        >
+          Favourite Games
+        </div>
+      </div>
     </div>
   );
 };

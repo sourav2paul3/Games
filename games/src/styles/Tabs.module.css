@@ -18,6 +18,10 @@
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
+.activeTab {
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38); /* Permanent shadow */
+}
+
 @media (max-width: 390px) {
   .tabsHeader {
     font-size: 12px;

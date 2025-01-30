@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 850px) {
   .searchBox {
     padding: 8px 30px 8px 10px;
     height: 28px;

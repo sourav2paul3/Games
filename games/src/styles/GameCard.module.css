@@ -1,0 +1,10 @@
+.cardContainer {
+  border: 1px solid black;
+  width: 450px;
+}
+
+@media (max-width: 850px) {
+  .cardContainer {
+    width: 190px;
+  }
+}

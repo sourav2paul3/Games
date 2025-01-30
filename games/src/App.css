@@ -1,0 +1,8 @@
+body {
+  margin: auto;
+  margin-top: 20px;
+  padding: 8px 0px;
+  background-color: rgba(25, 25, 112);
+  color: white;
+  max-width: 95%;
+}

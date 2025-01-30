@@ -2,7 +2,14 @@ body {
   margin: auto;
   margin-top: 20px;
   padding: 8px 0px;
-  background-color: rgba(25, 25, 112);
-  color: white;
-  max-width: 95%;
+  background-color: #d3d3d3;
+  color: black;
+  max-width: 80%;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 390px) {
+  body {
+    max-width: 90%;
+  }
 }

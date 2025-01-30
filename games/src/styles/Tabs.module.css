@@ -1,0 +1,29 @@
+.tabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  margin-top: 30px;
+  gap: 40px;
+}
+
+.tabsHeader {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.tabsHeader:hover {
+  box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+}
+
+@media (max-width: 390px) {
+  .tabsHeader {
+    font-size: 12px;
+    padding: 4px;
+  }
+  .tabContainer {
+    gap: 20px;
+  }
+}

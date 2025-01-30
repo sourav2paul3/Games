@@ -1,5 +1,11 @@
+.searchContainer {
+  margin: auto;
+  position: relative;
+  width: 99%;
+}
+
 .searchBox {
-  width: 100%;
+  width: calc(100% - 60px);
   padding: 10px 40px 10px 15px;
   border-radius: 30px;
   border: 1px solid #ccc;
@@ -7,16 +13,22 @@
   height: 30px;
 }
 
-.searchContainer {
-  position: relative;
-  width: 94%;
-}
-
 .searchIcon {
   position: absolute;
-  right: -45px;
+  right: 30px;
   top: 50%;
   transform: translateY(-50%);
   color: gray;
   cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  .searchBox {
+    padding: 8px 30px 8px 10px;
+    height: 28px;
+  }
+
+  .searchIcon {
+    right: 20px;
+  }
 }

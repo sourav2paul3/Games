@@ -3,11 +3,11 @@ import TicTacToe1 from "../assets/TicTacToe.png";
 export const Gamedata = [
   {
     title: "Tic-Tac-Toe",
-    favourite: false,
+    favourite: true,
     bgColour: "#00c04b",
     textColor: "black",
     image: TicTacToe1,
-    lastPlayed: "",
+    lastPlayed: Date.now(),
   },
   {
     title: "Snake",

@@ -1,44 +1,21 @@
-import TicTacToe1 from "../assets/TicTacToe.png";
-
+import TicTacToe from "../assets/TicTacToe.png";
+import Snake from "../assets/Snake.gif";
 export const Gamedata = [
   {
     title: "Tic-Tac-Toe",
-    favourite: true,
-    bgColour: "#00c04b",
+    favourite: false,
+    bgColour: "#008A00",
+    bgColour: "#87CEEB",
     textColor: "black",
-    image: TicTacToe1,
+    image: TicTacToe,
     lastPlayed: Date.now(),
   },
   {
     title: "Snake",
     favourite: false,
-    bgColour: "#00c04b",
-    textColor: "black",
-    image: "",
-    lastPlayed: "",
-  },
-  {
-    title: "Snake",
-    favourite: false,
-    bgColour: "#00c04b",
-    textColor: "black",
-    image: "",
-    lastPlayed: "",
-  },
-  {
-    title: "Snake",
-    favourite: false,
-    bgColour: "#00c04b",
-    textColor: "black",
-    image: "",
-    lastPlayed: "",
-  },
-  {
-    title: "Snake",
-    favourite: false,
-    bgColour: "#00c04b",
-    textColor: "black",
-    image: "",
+    bgColour: "#F1E4B7",
+    textColor: "#006400",
+    image: Snake,
     lastPlayed: "",
   },
 ];

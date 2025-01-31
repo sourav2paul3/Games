@@ -14,7 +14,9 @@ const GameCard = ({ data }) => {
         <img src={data.image} alt="" className={styles.image} />
       </div>
       <div>
-        <p className={styles.header}>{data.title}</p>
+        <p className={styles.header} style={{ color: data.textColor }}>
+          {data.title}
+        </p>
         <p className={styles.lastPlayed}>
           Last Played:
           {data.lastPlayed

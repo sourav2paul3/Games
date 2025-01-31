@@ -4,9 +4,8 @@ export const Gamedata = [
   {
     title: "Tic-Tac-Toe",
     favourite: false,
-    bgColour: "#008A00",
-    bgColour: "#87CEEB",
-    textColor: "black",
+    bgColour: "#ADD8E6",
+    textColor: "#FF4444",
     image: TicTacToe,
     lastPlayed: Date.now(),
   },

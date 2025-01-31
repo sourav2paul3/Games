@@ -4,7 +4,8 @@ import { FaBookmark } from "react-icons/fa";
 import { GamesContext } from "../context/GamesContext";
 
 const GameCard = ({ data }) => {
-  const { setFav } = useContext(GamesContext);
+  const { setFav, handleCardClick } = useContext(GamesContext);
+
   return (
     <div
       className={styles.cardContainer}
@@ -14,13 +15,17 @@ const GameCard = ({ data }) => {
         <img src={data.image} alt="" className={styles.image} />
       </div>
       <div>
-        <p className={styles.header} style={{ color: data.textColor }}>
+        <button
+          className={styles.header}
+          style={{ color: data.textColor }}
+          onClick={() => handleCardClick({ title: data.title, url: data.url })}
+        >
           {data.title}
-        </p>
+        </button>
         <p className={styles.lastPlayed}>
           Last Played:
           {data.lastPlayed
-            ? new Date(data.lastPlayed).toLocaleString()
+            ? new Intl.DateTimeFormat("en-GB").format(new Date(data.lastPlayed))
             : "Never"}
         </p>
       </div>

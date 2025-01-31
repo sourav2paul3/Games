@@ -7,7 +7,8 @@ export const Gamedata = [
     bgColour: "#ADD8E6",
     textColor: "#FF4444",
     image: TicTacToe,
-    lastPlayed: Date.now(),
+    lastPlayed: "",
+    url: "https://google.com",
   },
   {
     title: "Snake",
@@ -16,5 +17,6 @@ export const Gamedata = [
     textColor: "#006400",
     image: Snake,
     lastPlayed: "",
+    url: "wwww.google.com",
   },
 ];

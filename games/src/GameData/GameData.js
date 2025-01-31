@@ -8,7 +8,7 @@ export const Gamedata = [
     textColor: "#FF4444",
     image: TicTacToe,
     lastPlayed: "",
-    url: "https://www.google.com/",
+    url: "https://sourav2paul3.github.io/tictactoe/",
   },
   {
     title: "Snake",

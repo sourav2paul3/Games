@@ -5,17 +5,20 @@ import GameCard from "./GameCard";
 import styles from "../Styles/Home.module.css";
 import { GamesContext } from "../context/GamesContext.jsx";
 const Home = () => {
-  const { allGames, currentTab } = useContext(GamesContext);
+  const { filteredGames, currentTab } = useContext(GamesContext);
+
   return (
     <div>
       <Navbar />
       <Tabs />
       <div className={styles.gameCardContainer}>
         {currentTab === "allGames"
-          ? allGames.map((data, index) => <GameCard key={index} data={data} />)
-          : allGames.map((data, index) =>
-              data.favourite ? <GameCard key={index} data={data} /> : null
-            )}
+          ? filteredGames.map((data, index) => (
+              <GameCard key={index} data={data} />
+            ))
+          : filteredGames
+              .filter((data) => data.favourite)
+              .map((data, index) => <GameCard key={index} data={data} />)}
       </div>
     </div>
   );

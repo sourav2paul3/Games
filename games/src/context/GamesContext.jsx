@@ -5,6 +5,7 @@ export const GamesContext = createContext("");
 
 export const GamesContextProvider = ({ children }) => {
   const [searchedGame, setSearchedGame] = useState("");
+  const [filteredGames, setFilteredGames] = useState([]);
   const [currentTab, setCurrentTab] = useState("allGames");
   const [allGames, setAllGames] = useState(() => {
     try {
@@ -16,9 +17,22 @@ export const GamesContextProvider = ({ children }) => {
       return Gamedata;
     }
   });
+
   useEffect(() => {
     localStorage.setItem("games", JSON.stringify(allGames));
   }, [allGames]);
+
+  useEffect(() => {
+    if (searchedGame.trim() === "") {
+      setFilteredGames(allGames);
+    } else {
+      setFilteredGames(
+        allGames.filter((game) =>
+          game.title.toLowerCase().includes(searchedGame.toLowerCase())
+        )
+      );
+    }
+  }, [searchedGame, allGames]);
 
   const handleCardClick = ({ title, url }) => {
     setAllGames((prevGames) =>
@@ -28,8 +42,12 @@ export const GamesContextProvider = ({ children }) => {
     );
 
     setTimeout(() => {
-      window.location.href = { url };
+      window.location.href = url;
     }, 100);
+  };
+
+  const handleReset = () => {
+    setAllGames(Gamedata);
   };
 
   const setFav = (title) => {
@@ -43,7 +61,9 @@ export const GamesContextProvider = ({ children }) => {
   return (
     <GamesContext.Provider
       value={{
+        handleReset,
         handleCardClick,
+        filteredGames,
         searchedGame,
         setSearchedGame,
         currentTab,

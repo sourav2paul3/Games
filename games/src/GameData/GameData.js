@@ -2,13 +2,13 @@ import TicTacToe from "../assets/TicTacToe.png";
 import Snake from "../assets/Snake.gif";
 export const Gamedata = [
   {
-    title: "Tic-Tac-Toe",
+    title: "Tic Tac Toe",
     favourite: false,
     bgColour: "#ADD8E6",
     textColor: "#FF4444",
     image: TicTacToe,
     lastPlayed: "",
-    url: "https://google.com",
+    url: "https://www.google.com/",
   },
   {
     title: "Snake",
@@ -17,6 +17,6 @@ export const Gamedata = [
     textColor: "#006400",
     image: Snake,
     lastPlayed: "",
-    url: "wwww.google.com",
+    url: "https://www.google.com/",
   },
 ];

@@ -1,9 +1,14 @@
-.searchContainer {
+.navBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
   margin: auto;
-  position: relative;
-  width: 99%;
 }
 
+.searchContainer {
+  position: relative;
+  width: 80%;
+}
 .searchBox {
   width: calc(100% - 60px);
   padding: 10px 40px 10px 15px;
@@ -20,6 +25,10 @@
   top: 50%;
   transform: translateY(-50%);
   color: gray;
+  cursor: pointer;
+}
+.resetIcon {
+  margin: auto;
   cursor: pointer;
 }
 

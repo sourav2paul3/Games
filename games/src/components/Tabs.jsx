@@ -13,7 +13,7 @@ const Tabs = () => {
           }`}
           onClick={() => setCurrentTab("allGames")}
         >
-          All Games
+          All Apps
         </div>
         <div
           className={`${styles.tab} ${
@@ -21,7 +21,7 @@ const Tabs = () => {
           }`}
           onClick={() => setCurrentTab("favGames")}
         >
-          Favourite Games
+          Favourite Apps
         </div>
       </div>
     </div>

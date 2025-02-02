@@ -24,9 +24,9 @@ const GameCard = ({ data }) => {
         </button>
         <p className={styles.lastPlayed}>
           {data.lastPlayed
-            ? "Last Played:" +
+            ? "Last Opened:" +
               new Intl.DateTimeFormat("en-GB").format(new Date(data.lastPlayed))
-            : "Yet to play!"}
+            : "Yet to Open!"}
         </p>
       </div>
       <div className={styles.gameDetailsContainer}>

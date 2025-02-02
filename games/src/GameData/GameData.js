@@ -1,5 +1,6 @@
 import TicTacToe from "../assets/TicTacToe.png";
 import Snake from "../assets/Snake.gif";
+import Notes from "../assets/Notes.png";
 export const Gamedata = [
   {
     title: "Tic Tac Toe",
@@ -17,6 +18,15 @@ export const Gamedata = [
     textColor: "#006400",
     image: Snake,
     lastPlayed: "",
-    url: "https://www.google.com/",
+    url: "abc",
+  },
+  {
+    title: "Notes",
+    favourite: false,
+    bgColour: "#FFAF69",
+    textColor: "#006400",
+    image: Notes,
+    lastPlayed: "",
+    url: "https://sourav2paul3.github.io/Note-App/",
   },
 ];
